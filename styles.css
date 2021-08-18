@@ -10,6 +10,9 @@ img {
     font-size: 45px;
     font-weight: bolder;
     padding-left: 20px;
+    font-weight: bolder;
+    position: relative;
+    left: 90px;
 }
 
 .nav {
@@ -18,7 +21,7 @@ img {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 7px 0;
+    margin: 10px 0;
 }
 
 #homeLink {
@@ -34,7 +37,7 @@ img {
 
 .links {
     position:relative;
-    right: 170px;
+    right: 250px;
 }
 
 .banner {
@@ -43,12 +46,25 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
-    padding-top: 160px;
+    padding-bottom: 40px;
+    padding-top: 45px;
+    border-top: 5px solid #df756e; 
+    border-bottom: 5px solid #df756e;
+}
+
+.circle {
+    border: 5px solid white;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: relative;
+    left: 165px;
+
 }
 
 .banner h3 {
-    font-size: 22px;
+    font-size: 23px;
     font-weight: bolder;
 }
 
@@ -157,6 +173,7 @@ img {
 .footer {
     background-color: rgb(36, 36, 36);
     padding: 20px 350px;
+    width: 1915px;
 }
 
 .footer div {
@@ -165,13 +182,45 @@ img {
     font-size: 12px;
 }
 
-.carouselText {
+.text-above {
+    position: absolute;
+    text-align: center;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 40%;
+    width: 50vw;
+    left: 25%;
     color: white;
-    background-color: rgb(90, 90, 90);
-    text-align: left;
-    padding-top;: 15%;
-    padding-left: 8%;
-    padding-bottom: 120px; 
-    padding-right: 8%;
-    border-top: 5px solid #F4473A;
+}
+
+.text-above p {
+    color: white;
+    font-weight: normal;
+}
+
+
+#carousel img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+   } 
+
+
+#carousel .redButtons {
+    background-color: red;
+    width: 50px;
+    height: 100px;
+    margin-top: 360px;
+}
+
+#readButton {
+    color: white;
+    border: 1px solid white;
+    width: 150px;
+    height: 35px;
+    background-blend-mode: overlay;
+    background-color: transparent;
+    font-weight: bolder;
 }
